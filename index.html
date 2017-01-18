@@ -204,7 +204,21 @@ Running your app/site locally
 --
 Again, you could use the Scotch box provided by Scotch.io (https://scotch.io/bar-talk/announcing-scotch-box-2-5). Should be similar to Homestead
 
-Don't know of anything equivalent to Valet.
+Don't know of anything equivalent to Valet. 
+
+Maybe MAMP, WAMP, AMPPS, XAMPP?
+---
+### The Ecosystem - ORM
+
+* Eloquent - Active Record ORM
+
+    * https://laravel.com/docs/5.3/eloquent
+    * Supports MySQL, Postgres, SQLite, SQL Server
+    * Pagination of Data
+
+--
+Alternative, have to name Doctrine (http://www.doctrine-project.org/projects/orm.html), although uses Data Mapper Pattern.
+
 ---
 ### The Ecosystem - Add On Packages
 
@@ -213,15 +227,41 @@ Officially Supported Packages
 * Cashier (https://laravel.com/docs/5.3/billing)
     * Billing, Coupons, subscriptions, generate invoice PDFs
 
+* Socialite (https://github.com/laravel/socialite)
+    * Connect to oAuth servers with ease
+    * Social Login with Facebook, Twitter, Github, many many more
+
 * Passport (https://laravel.com/docs/5.3/passport)
     * Full oAuth2 server implementation you can add to your Laravel sites.
 
 * Scout (https://laravel.com/docs/5.3/scout)
     * Full text search to your Eloquent Models, keep your search indexes in sync with Eloquent records.
 
-* Socialite (https://github.com/laravel/socialite)
-    * Connect to oAuth servers with ease
-    * Social Login with Facebook, Twitter, Github, many many more
+
+---
+### The Ecosystem - Add On Packages
+
+Unoffically Supported
+
+* Socialite Providers (https://socialiteproviders.github.io/)
+
+    * Almost any service that provides oAuth authentication, might be supported by this package. If not, you can create a new driver and submit it! 100+ services supported.
+
+* Laravel Debugbar (https://github.com/barryvdh/laravel-debugbar)
+
+    * Sweet way to inspect data, number of queries and other debugging information.
+    * Based on (http://phpdebugbar.com/) so that is an alternative
+
+---
+### The Ecosystem - MicroFramework
+
+* Lumen (https://lumen.laravel.com/)
+
+    * A microframework, great for api's. Very similar to full Laravel, minus the Blade system, and slightly different way to handle routing, but for additional speed.
+
+--
+* Alternative is Slim (https://www.slimframework.com/)
+* Or Silex (http://silex.sensiolabs.org/)
 
 ---
 ### The Ecosystem - Paid Services
